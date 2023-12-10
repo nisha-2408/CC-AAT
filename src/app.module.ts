@@ -13,8 +13,8 @@ import entities from './tables';
       imports: [ConfigModule],
       useFactory: (configService: ConfigService) => ({
         type: 'postgres',
-        host: '0.0.0.0',
-        port: 5438,
+        host: 'postgres',
+        port: 5432,
         username: 'postgres',
         password: 'postgres',
         database: 'postgres',
